@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 350px;
+    height: 680px;
+    background-color:  rgb(209, 188, 231);
+    
+    justify-items: center;
+    margin: auto;
+    text-align: center;
+}
+#customer{
+    width: 100%;
+}
+marquee{
+    background-color:  rgb(209, 188, 231);
+}
+#ticket{
+    width: 6rem;
+}
+#pnr{
+    width: 6rem;
+}
+.pnr-status{
+   width: max-content;
+   margin-top: 15px;
+   width: 350px;
+
+
+}
+.ticket-cancel{
+    margin-top: 15px;
+   
+    width: max-content;
+    width: 350px;
+}
+.booking-train{
+    margin-top: 15px;
+    width: max-content;
+    width:350px;
+}
+#booking{
+    width: 6rem;
+}
+button{
+    background-color: rgb(209, 188, 231);
+    border: none;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

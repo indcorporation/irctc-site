@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Details</title>
+    <style>
+      
+         body{
+            width:320px;
+            
+            border-radius: 20px;
+            padding: 10px;
+            margin: auto;
+            background-color:  rgb(209, 188, 231);
+            font-size: 2em;
+        }
+
+        #images{
+            width: 100%;
+       
+        margin: auto;
+        text-align: center;
+        
+       }
+       .form-container{
+            text-align: center;
+
+        }
+
+        input{
+            border: 1px;
+            border-radius: 20px;
+            width: 300px;
+           height: 45px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+        #travel{
+            padding: 7px;
+            font-size: 0.7em;
+            border-radius: 5px;
+           
+            
+        }
+
+        button{
+        padding: 10px;
+        margin: 40px;
+        border-radius: 5px;
+        font-size: 0.5em;
+        margin-top: 60px;
+        margin-right: 10px;
+       }
+       #back{
+        padding: 10px;
+        width: 70px;
+        border-radius: 5px;
+        font-size: 0.5em;
+        margin-top: 60px;
+        border: 1.6px solid #100e0e;
+        padding: space-between;
+        
+       }
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="index4.html">
+            <img src="image.png" alt="IRCTC Logo" id="images"><br>
+            <div class="soption">
+           <select name="travel" id="travel">
+            <option value="select">---Select---</option>
+            <option value="pnr">PNR No</option>
+            <option value="txn">TXN No</option>
+           </select>
+        </div><br><br>
+            <label for="pnr"></label><br>
+            <input placeholder="PNR No / TXN No"  type="text" name="pnr" id="pnr" required > <br>
+            
+               
+            <input type="button" value="BACK" id="back" onclick="goBack()">
+        
+            <button>NEXT</button>
+
+        
+
+        
+        </form>
+    </div>
+        <script>
+            function goBack(){
+                window.location.href ="index2.html";
+              }
+          
+      </script>
+    
+</body>
+</html>

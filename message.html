@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Details</title>
+    <style>
+       
+         body{
+            width:320px;
+            border-radius: 20px;
+            padding: 10px;
+            margin: auto;
+            background-color:  rgb(209, 188, 231);
+            font-size: 2em;
+            
+        }
+
+        button{
+        padding: 0.5em;
+        border-radius: 5px;
+        font-size: 0.5em;
+        margin-top: -35px;
+       }
+       #reference{
+        margin-top: -75px;
+        
+       }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto;">
+            <circle cx="50" cy="50" r="45" stroke="green" stroke-width="5" fill="transparent"/>
+            <path d="M30.3333 54.6667L43 67.3333L70.6667 40" stroke="green" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h4>Complaint Registered Successfully</h4>
+        <div id="clock">05:00</div>
+        <br><br><br><br>
+        <h6 id="reference">Complain No: CMP0003691455EF</h5>
+        <br>
+        <br><br>
+        
+
+        <!-- New element to display "Process is Pending" -->
+        <div id="pendingMessage" style="display: none; font-size: 20px; font-weight: bold; color: red;">
+            Process is Pending
+        </div> 
+        <a href="index2.html">
+        <button onclick="goToNextPage()" >RAISE ANOTHER QUERIES</button>
+    </a>
+    </div>
+    <script>
+        // Countdown timer for 5 minutes (300 seconds)
+        let remainingTime = 300;
+        const clockElement = document.getElementById("clock");
+        const pendingMessageElement = document.getElementById("pendingMessage");
+
+        function updateClock() {
+            const minutes = Math.floor(remainingTime / 60).toString().padStart(2, "0");
+            const seconds = (remainingTime % 60).toString().padStart(2, "0");
+            clockElement.textContent = `${minutes}:${seconds}`;
+            remainingTime--;
+
+            if (remainingTime >= 0) {
+                setTimeout(updateClock, 1000); // Update the clock every second
+            } else {
+                // Time is up, show the "Process is Pending" message
+                pendingMessageElement.style.display = "block";
+            }
+        }
+
+        // Start the countdown
+        updateClock();
+        function goToNextPage() {
+            window.location.href="index2.html";
+        }
+    </script>
+
+</body>
+</html>

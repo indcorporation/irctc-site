@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+    <style>
+       
+     body{
+            width:320px;
+            height: 680px;
+            border-radius: 20px;
+            padding: 10px;
+            margin: auto;
+            background-color:  rgb(209, 188, 231);
+            font-size: 2em;
+            
+        }
+       
+
+
+
+        .form-container{
+            text-align: center;
+            
+
+        }
+
+        input{
+            border: 1px;
+            border-radius: 20px;
+            width: 300px;
+           height: 45px;
+            font-size: 0.8em;
+            text-align: center;
+            
+        }
+       #complain{
+        border: 1px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        text-align: center;
+         
+       }
+       
+      
+       #images{
+        width: 100%;
+       
+        margin: auto;
+        text-align: center;
+        
+       }
+       button{
+        padding: 0.5em;
+        border-radius: 5px;
+        font-size: 0.5em;
+       }
+       
+        
+       
+       
+    </style>
+</head>
+<body> 
+   
+    <div class="form-container">
+    <form action="index3.html">
+        <img src="image.png" alt="IRCTC Logo" id="images"><br>
+<label for="fname"></label><br>
+<input placeholder="FULL NAME" type="text" id="fname" name="fname" required><br>
+<label for="mobile"></label><br>
+<input placeholder="MOBILE NUMBER" type="tel" id="mobile" name="mobile"   required><br>
+<label   for="complain"></label><br>
+<textarea placeholder="COMPLAIN / QUERIES"  name="complain" id="complain" cols="25" rows="4"></textarea><br>
+<div>
+<a href="index3.html">
+<button>NEXT</button></a>
+</div>
+</form>
+</div>
+</body>
+</html>
